@@ -42,25 +42,35 @@ section{
 	height: 680px;
   
 }
-/*article{
-	width: auto;
-	height: 800px;
-	
-}*/
+.content{
+	color: black;
+	font-family: Poppins;
+    font-size: 20px;
+    text-align: left;
+}
+
 .title{
-	color: #F37298;
+	color: black;
 	font-family: Poppins;
 	font-weight: bold;
 	font-size: 60px;
 	text-align: center;
 }
-h1{
-	color: #F37298;
-	text-align: center;
+.heading{
+	color: black;
 	font-family: Poppins;
-	font-size: 120px;
-	font-weight: 900;
+	font-weight: 600;
+	font-size: 80px;
+	text-align: left;
+}
+
+h1{
+	color: black;
+	font-family: Poppins;
+	font-size: 80px;
+	font-weight: 600;
 	text-decoration: none;
+	text-align: center;
 }
 
 	
@@ -72,7 +82,14 @@ p{
     text-decoration: none;
 	
 }
-
+header{
+	color: #F37298;
+	text-align: center;
+	font-family: Poppins;
+	font-size: 120px;
+	font-weight: 900;
+	text-decoration: none;
+}
 
 h2{
 	color: #89A9CA;
@@ -89,6 +106,15 @@ img{
 	width: 30%;
 	
 }
+.subtitle{
+	color: black;
+	text-align: center;
+	font-family: Poppins;
+    font-size: 20px;
+    text-decoration: none;
+ 
+}
+
 
 .button {
     font-family: Poppins;
@@ -103,6 +129,7 @@ img{
     margin: auto;
     width: 50%;
     padding: 10px;
+  
    
 }
 
@@ -112,7 +139,7 @@ img{
 }
 #button-position{
 	margin: auto;
-	width: 5%;
+	width: 10%;
 	
 }
 
@@ -123,7 +150,7 @@ img{
    }
 
    h1{
-   	font-size: 50px;
+   	font-size: 30px;
    }
 
    p{
