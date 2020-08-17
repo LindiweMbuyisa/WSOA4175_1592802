@@ -1,3 +1,4 @@
+
 .navhome {
 	float: left;
 	font-family: Poppins;
@@ -46,7 +47,7 @@ section{
 	color: black;
 	font-family: Poppins;
     font-size: 20px;
-    text-align: left;
+    text-align: center;
 }
 
 .title{
@@ -106,6 +107,17 @@ img{
 	width: 30%;
 	
 }
+.read{
+	
+	font-family: Poppins;
+	font-size: 50px;
+	font-weight: bold;
+	color: black;
+	text-decoration: none;
+	padding:15px;
+	margin-bottom: 10px;
+	border-radius: 10px;
+}
 .subtitle{
 	color: black;
 	text-align: center;
@@ -114,6 +126,11 @@ img{
     text-decoration: none;
  
 }
+.Blog-Outline{
+	background-color: white;
+	
+}
+
 
 
 .button {
@@ -142,6 +159,11 @@ img{
 	width: 10%;
 	
 }
+.row{
+	background-color: pink;
+	width: 50%;
+
+}
 
 
 @media screen and (max-width: 700px){
@@ -167,8 +189,14 @@ img{
 li a{
 
 	padding: 10px 10px;
-	font-size: 10px;
+	font-size: 12px;
 	
+}
+.Image-Outline{
+
+}
+.heading{
+	font-size: 40px;
 }
 .button{
     
@@ -183,6 +211,17 @@ li a{
 #button-position{
    width: 16%;
 }
+.navbar{
+	bottom: 0;
+	width: 100vw;
+	height: 5rem;
+
+}
+
+.navlinks{
+flex-direction: row;
+}
+
 }
 
 
