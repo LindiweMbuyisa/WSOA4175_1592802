@@ -1,6 +1,6 @@
-/*const button = document.querySelector('view-btn');
-button.addEventListener('click', () =>{
-	console.log("yellow");
-	document.body.style.backgroundColor ="yellow";
+//Back Button
+function Back(){
+	window.history.back();
+}
 
-});*/
+//let navHome = {title: 'Home' link:'index.html'};
