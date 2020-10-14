@@ -1,9 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => createNav());
-let navBar= [
 
-{title: 'Creative Projects', link: 'Creative.html'},
-{title: 'Blog', link: 'Blog.html'},
+let navBar= [
+{title: 'Home', link:'index.html'},
 {title: 'About', link: 'About.html'},
+{title: 'Blog', link: 'Blog.html'},
+{title: 'Creative Projects', link: 'Creative.html'},
+
+
 
 ];
 
@@ -23,11 +26,11 @@ let nav = document.querySelector('nav');
 
  nav.appendChild(ul);
 };
-let PrevNextBtn =[
-{
-	
-}
-]
 
+/*
+let hamburger = document.getElementById('hamburger');
 
-
+let navul = document.getElementById('nav');
+hamburger.addEventListener('click', () => {
+	navul.classList.toggle('dropdownnav');
+});*/

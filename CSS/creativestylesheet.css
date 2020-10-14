@@ -4,7 +4,7 @@ body{
 /*Navigation */
 li{
 	display: inline;
-	float: right;
+	float: left;
 }
 li a{
 	display: block;
@@ -30,10 +30,14 @@ li a:hover{
     background-color: #F37298;
 }
 ul{
+    top:0;
+  	background-color: black;
     list-style-type: none;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
+    position: fixed;
+    width: 100%;
 
 }
 
@@ -234,4 +238,6 @@ li a{
 .column-right{
  width: auto;
 }
-
+.subtitle{
+	font-size: 15px;
+}
