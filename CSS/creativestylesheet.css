@@ -1,36 +1,13 @@
-body{
-	background-color: black;
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Lato'
 }
-/*Navigation */
-li{
-	display: inline;
-	float: left;
-}
-li a{
-	display: block;
-	color: #7bf2ff;
-	text-align: center;
-	text-decoration: none;
-	font-size: 20px;
-	font-family: Lato;
-	padding: 10px 10px;
-   
-	
+/*Navigation*/
 
-}
-
-a{
-	display: block;
-	padding: 8px;
-
-}
-
-
-li a:hover{
-    background-color: #F37298;
-}
 ul{
-    top:0;
+	top:0;
   	background-color: black;
     list-style-type: none;
 	margin: 0;
@@ -38,8 +15,61 @@ ul{
 	overflow: hidden;
     position: fixed;
     width: 100%;
+    z-index: 10;
 
 }
+
+li{
+	float: right;
+
+}
+li a{
+	display: block;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	font-size: 20px;
+	font-family: Lato;
+	padding: 10px 10px;
+   
+ 
+
+
+}
+
+a{
+	padding: 8px;
+
+}
+
+
+
+li a:hover:not(.current-link){
+    background-color: #F37298;
+}
+
+body{
+	background-color: black;
+}
+
+.current-link{
+	background-color:#F37298;
+
+}
+
+.hamburger{
+	width: 100%;
+	padding: 10px 20px;
+	background-color: #F37298;
+	text-align: right;
+	box-sizing: border-box;
+	color: black;
+	font-size: 20px;
+	display: none;
+
+}
+
+
 
 section{
 	width: auto;
@@ -125,32 +155,7 @@ button:hover{
 	width: 10%;
 	
 }
-/*.contacts{
-	display: grid;
-	grid-template-columns: auto auto auto;
-	background-color: #7bf2ff;
-	padding: 10px;
-}
-.contact-item{
-	background-color: black;
-	border: 1px solid grey;
-	padding: 20px;
-	font-size: 30px;
-	text-align: center;
-}
-#generate-grid{
-	display: grid;
-	grid-template-columns: auto auto auto;
-	background-color:  #7bf2ff;
-	padding: 10px;
-}
-.grid-block{
-	background-color: white;
-	border: 1px solid grey;
-	padding: 20px;
-	font-size: 30px;
-	text-align: center;
-}*/
+
 .project-title{
 	
 	font-family: Lato;
@@ -171,7 +176,7 @@ button:hover{
 
 }   
   .subtitle{
-	color:  #7bf2ff;
+	color:  white;
 	text-align: center;
 	font-family: Lato;
     font-size: 20px;
@@ -196,9 +201,15 @@ button:hover{
 	display: table;
 	
 }
+.video{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	width: 80%;
+	
+}
 
 
-/*Tablet*/
 /*Moblie*/
 
 @media screen and (max-width: 700px){
@@ -221,11 +232,30 @@ img{
 }
 
 li a{
+ font-size: 12px;
 
-	padding: 10px 10px;
-	font-size: 12px;
-	
 }
+li{
+	float: none;
+}
+ul{
+	width: 100%;
+	display: none;
+}
+
+
+button{
+	font-size: 15px;
+	padding: 5px;
+}
+
+.hamburger{
+ 	display: block;
+ }
+ .togglehamburger{
+ 	display: block;
+ }
+ 
 .heading{
 	font-size: 30px;
 }
@@ -241,3 +271,107 @@ li a{
 .subtitle{
 	font-size: 15px;
 }
+}
+
+/*Tablet */
+@media screen and (max-width: 1024px) and (min-width: 700px){
+	 h1{
+   	font-size: 30px;
+   }
+    h2{
+    	font-size: 30px;
+    }
+    h3{
+    	font-size: 25px;
+    }
+
+
+img{
+	margin-right: auto;
+	margin-left: auto;
+	width: 80%;
+}
+
+li a{
+ font-size: 12px;
+
+}
+li{
+	float: none;
+}
+ul{
+	width: 100%;
+	display: none;
+}
+
+
+.hamburger{
+ 	display: block;
+ }
+ .togglehamburger{
+ 	display: block;
+ }
+
+button{
+	font-size: 20px;
+	padding: 10px;
+}
+
+.heading{
+	font-size: 40px;
+}
+.button{
+    
+    font-size: 100%;
+    padding: 2.5px 8px;
+    width: 10%;
+    padding: 5px;
+}
+.title{
+	font-size: 22px;
+}
+#button-position{
+   width: 16%;
+}
+.blog-title{
+	font-size: 25px;
+}
+.paragraph{
+	font-size: 25px;
+
+}
+.subtitle{
+	font-size: 18px;
+}
+.date{
+	font-size: 15px;
+}
+.column-container{
+ display: block;
+}
+.column-left{
+  width: auto;
+  float: none;
+   margin-top: 0px;
+}
+.column-right{
+ width: auto;
+ float: none;
+ margin-top: 0px;
+}
+.link{
+	font-size: 20px;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+.caption{
+ 	
+ 	font-size: 15px; 
+ 	
+ }
+ .img-about{
+    width: 60%;
+ }
+	}

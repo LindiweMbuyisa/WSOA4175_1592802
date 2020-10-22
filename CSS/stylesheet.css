@@ -1,59 +1,71 @@
-/*Navigation */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Lato';
+
+}
+
+body{
+ background-color: #7bf2ff;
+}
+/*Navigation*/
 ul{
 	top:0;
-  	background-color: #7bf2ff;
+  	background-color: black;
     list-style-type: none;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
     position: fixed;
     width: 100%;
-
-  
+    z-index: 10;
 
 }
+
 li{
-	float: left;
-	
+	float: right;
+
 }
 li a{
 	display: block;
-	color: black;
+	color: white;
 	text-align: center;
 	text-decoration: none;
 	font-size: 20px;
 	font-family: Lato;
 	padding: 10px 10px;
-  
-
-}
-a{
-	padding: 8px;
-
+   
 }
 
-
-li a:hover{
+li a:hover:not(.current-link){
     background-color: #F37298;
 }
-li.Home{
-	float: right;
+
+.current-link{
+	background-color:#F37298;
+
 }
+
+a{
+padding: 8px;
+
+}
+
 
 .hamburger-menu{
+	width: 100%;
+	padding: 10px 20px;
 	background-color: black;
-	border:0;
-	color: white;
+	text-align: right;
+	box-sizing: border-box;
+	color: black;
 	font-size: 20px;
+	display: none;
 
 }
-.logo{
-	width: 46px;
-	height: 46px;
-	border-radius: 50%;
-	overflow: hidden;
-	margin-top: -6px;
-}
+
+
 .Blog{
 	float: left;
 }
@@ -72,19 +84,30 @@ li.Home{
 
 .column-container{
 	
-	display: table;
+	display: flex;
+	border-radius: 50px;
 	
 }
 
-body{
-	background-color: #7bf2ff;
-}
+
 section{
 	width: auto;
 	padding: 20px;
  	text-align: left;
+ 	margin-top: 60px;
 }
-
+.about-setion{
+	width: auto;
+	padding: 0px;
+ 	text-align: left;
+ 	margin-top: 60px;
+}
+.contact-section{
+	width: auto;
+ 	text-align: left;
+ 	margin-top: 60px;
+ 	padding: 0px;
+}
 .heading{
 	color: black;
 	font-family: Lato;
@@ -111,13 +134,32 @@ section{
 	color: black;
 	margin-bottom: 10px;
 	border-radius: 10px;
-	
+	text-align: center;
 
 }
-  a:hover{
+ a:hover{
  	background-color: #F37298;
  
  }
+
+/*a>img{
+	display: none;
+}
+a:hover>.img-blog{
+	display: block;
+	width: 240px;
+}*/
+
+ .img-blog{
+ 	margin-left: 10px;
+ 	margin-right: 10px;
+ 	height: auto;
+ 	width: 500px;
+ 	float: left;
+
+ 	
+ }	
+
 .title{
 	color: black;
 	font-family: Lato;
@@ -172,11 +214,11 @@ header{
 }
 
 h2{
-	color: #f37298;
+	color: black;
 	font-family: Lato;
 	text-align: center;
     font-size: 20px;
-    text-decoration: underline;
+   
   
 
 }
@@ -184,7 +226,7 @@ h2{
 	display: block;
 	margin-right: auto;
 	margin-left: auto;
-	width: 100%;
+	width: 80%;
 	
 }
 img{
@@ -203,9 +245,10 @@ img{
  	text-align: center;
  	font-size: 12px; 
  	font-family: Lato;
- 	text-decoration: underline;
+
  	color: black;
  }
+
 button {
     font-family: Lato;
     color: black;
@@ -216,6 +259,7 @@ button {
     margin: auto;
    padding: 10px;
    float: right;
+   margin-top: 60px;
 }
 
 button:hover{
@@ -227,11 +271,7 @@ button:hover{
 	width: 10%;
 	
 }
-.background{
-	
-	height: 40rem;
 
-}
 #contact{
 	display: flex;
 
@@ -239,13 +279,17 @@ button:hover{
 .link{
 	
 	font-size: 15px;
-	color: black;
+	color: #F37298;
 	font-family: Lato;
-	margin-left: 328px;
-	text-decoration: none;
-	
+	margin-left: auto;
+	margin-right: auto;
+	cursor: pointer;
+	font-weight: bold;
 }
 
+.link:hover{
+	color: black;
+}
 .button {
 font-family: Lato;
 color: black;
@@ -262,24 +306,52 @@ color: black;
   color:  white;
   border: solid black 2px;
 }
-.box-container{
+.showreel{
+     min-width: 100%;
+     min-height: 100%;
+     bottom: 0;
+     top: 0;
+     left: 0;
+     right: 0;
+     
+}
+
+.slider-container{
+	width: 300px;
+	height: 300px;
 	display: flex;
-	flex-basis: auto;
-	padding: 0;
-  margin: 0;
-  list-style: none;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+scroll-behavior: smooth;
+	
+}
+.slide-box{
+	width: 300px;
+	flex-shrink: 0;
+	height: 100%;
+	background-color: pink;
+}
+.read{
+	text-align: right;
+	font-size: 20px;
+	font-family: Lato;
+	color: black;
+	margin-left: 450px;
+}
+.read:hover{
+	color: black;
+}
+iframe{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	height: 100%;
+	width: 100%;
+
 
 }
-.main {
- display: flex;
-	flex-basis: auto;
-	padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-
-
 /*Moblie*/
 
 @media screen and (max-width: 700px){
@@ -293,6 +365,12 @@ color: black;
     h3{
     	font-size: 15px;
     }
+ .img-blog{
+	margin-left: 0px;
+	margin-right: 0px;
+	width: 300px;
+	float: none;
+}
    
 img{
 	display: block;
@@ -302,15 +380,46 @@ img{
 }
 
 li a{
+ font-size: 12px;
 
-	padding: 10px 10px;
-	font-size: 12px;
-	
 }
+li{
+	float: none;
+}
+li a{
+ font-size: 12px;
+
+}
+li{
+	float: none;
+}
+ul{
+	width: 100%;
+	display: none;
+}
+
+
+
+.hamburger{
+ 	display: block;
+ }
+ 
+
+
 button{
 	font-size: 15px;
 	padding: 5px;
+	margin-top: 30px;
+	margin-right: 10px;
 }
+
+
+.caption{
+ 	text-align: center;
+ 	font-size: 12px; 
+ 	font-family: Lato;
+ 	color: black;
+ }
 
 .heading{
 	font-size: 30px;
@@ -347,56 +456,81 @@ button{
 .date{
 	font-size: 15px;
 }
-.column{
-	width: 100%;
-}
-.columns-container{
-	width: 100%;
+
+.column-container{
+  display: block;
 }
 .column-left{
   width: auto;
+  float: none;
+   margin-top: 0px;
 }
 .column-right{
  width: auto;
- 
-
+ float: none;
+ margin-top: 0px;
 }
 .name-heading{
   font-size: 50px;
 }
 .link{
 	font-size: 15px;
-	margin-left: 40px;
+margin-left: auto;
+margin-right: auto;
 	
 }
+.caption{
 
-
+ 	font-size: 12px; 
+ 
+ }
+ .read{
+	text-align: right;
+	font-size: 15px;
+	margin-left: 200px;
+	font-weight: bold;
 }
-/*Tablet 
-@media screen and (max-width: 1024px){
+ 
+}
+
+/*Tablet */
+@media screen and (max-width: 1024px) and (min-width: 700px){
 	 h1{
    	font-size: 30px;
    }
     h2{
-    	font-size: 20px;
+    	font-size: 30px;
     }
     h3{
-    	font-size: 15px;
+    	font-size: 25px;
     }
 
 
 img{
 	margin-right: auto;
 	margin-left: auto;
-	width: 100%;
+	width: 80%;
 }
 
 li a{
+ font-size: 12px;
 
-	padding: 10px 10px;
-	font-size: 12px;
-	
 }
+li{
+	float: none;
+}
+ul{
+	width: 100%;
+	display: none;
+}
+
+
+.hamburger{
+ 	display: block;
+ }
+ .togglehamburger{
+ 	display: block;
+ }
 button{
 	font-size: 20px;
 	padding: 10px;
@@ -413,7 +547,7 @@ button{
     padding: 5px;
 }
 .title{
-	font-size: 25px;
+	font-size: 22px;
 }
 #button-position{
    width: 16%;
@@ -422,7 +556,7 @@ button{
 	font-size: 25px;
 }
 .paragraph{
-	font-size: 15px;
+	font-size: 25px;
 
 }
 .subtitle{
@@ -431,21 +565,47 @@ button{
 .date{
 	font-size: 15px;
 }
-.columns-container{
-	width: 100%;
+.column-container{
+ display: block;
 }
 .column-left{
   width: auto;
+  float: none;
+   margin-top: 0px;
 }
 .column-right{
  width: auto;
+ float: none;
+ margin-top: 0px;
 }
 .link{
-	font-size: 15px;
-	margin-left: 150px;
+	font-size: 20px;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
 	
 }
-	}*/
+.caption{
+ 	
+ 	font-size: 15px; 
+ 	
+ }
+ .img-about{
+    width: 60%;
+ }
+ .img-blog{
+	margin-left: 100px;
+	margin-right: 0px;
+	width: 450px;
+	float: none;
+}
+.read{
+	text-align: right;
+	font-size: 18px;
+	margin-left: 550px;
+	font-weight: bold;
+}
+	}
 
 
 
