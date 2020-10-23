@@ -1,6 +1,6 @@
 
-let hamburgerToggle = document.getElementsByClassName('hamburger-toggle')[0]
-let links = document.getElementsByClassName('links')[0]
+let hamburgerToggle = document.getElementsByClassName('hamburger-toggle');
+let links = document.getElementsByClassName('links');
 
 hamburgerToggle.addEventListener('click', () => {
 	links.classList.toggle('active')

@@ -294,7 +294,7 @@ button:hover{
 
 #contact{
 	display: flex;
-	padding: 0px;
+	
 
 }
 .title-about{
@@ -321,13 +321,12 @@ color: black;
  text-decoration: none;
  border: solid black;
  border-radius: 10px;
- margin: auto;
  display: inline;
- 
+
 }
 
 .button:hover {
-  color:  white;
+  color: #F37298 ;
   border: solid black 2px;
 }
 .showreel{
@@ -359,8 +358,34 @@ scroll-behavior: smooth;
 	text-align: right;
 	font-size: 20px;
 	font-family: Lato;
-	color: black;
+	color: #7bf2ff;
 	margin-left: 450px;
+}
+.video{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+	height: 600px;
+	margin: 0px;
+	padding: 0px
+}
+.video-button{
+    font-family: Lato;
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    border: solid black;
+    border-radius: 10px;
+   padding: 10px;
+   float: right;
+ 	 position: absolute;
+	 margin-top: -350px;
+	 margin-left: 40%; 
+}
+.video-button:hover{
+	color: #F37298 ;
+  border: solid black 2px;
 }
 
 
@@ -425,9 +450,9 @@ li a{
 
 
 button{
-	font-size: 15px;
+	font-size: 12px;
 	padding: 5px;
-	margin-top: 0px;
+	
 	margin-right: 10px;
 }
 
@@ -449,6 +474,15 @@ button{
     width: 10%;
     padding: 5px;
 }
+.video-button{
+    
+    font-size: 12px;
+    padding: 2.5px 8px;
+
+    margin-top: -120px;
+    margin-left: 35%;
+}
+
 .img-about{
 	display: block;
 	margin-right: auto;
@@ -511,6 +545,14 @@ margin-right: auto;
 .title-about{
 	font-size: 30px;
 }
+.video{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+	height: 200px;
+	padding:0px;
+}
  
 }
 
@@ -549,10 +591,6 @@ li a{
 		width: 100%;
 
 	}
-	nav{
-		flex-direction: column;
-		align-items: flex-start;
-	}
 	 ul{
 		text-align: center;
 	}
@@ -578,6 +616,13 @@ button{
     padding: 2.5px 8px;
     width: 10%;
     padding: 5px;
+}
+.video-button{
+
+    font-size: 100%;
+    padding: 2.5px 8px;
+    padding: 5px;
+    margin-left: 40%;
 }
 .title{
 	font-size: 22px;
@@ -641,6 +686,13 @@ button{
 .title-about{
 	font-size: 30px;
 	padding: 50px;
+}
+.video{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+	height: 450px;
 }
 	}
 

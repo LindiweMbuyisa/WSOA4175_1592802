@@ -8,7 +8,7 @@
 
 ul{
 	top:0;
-  	background-color: black;
+  	background-color: #F37298;
     list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -25,7 +25,7 @@ li{
 }
 li a{
 	display: block;
-	color: white;
+	color: black;
 	text-align: center;
 	text-decoration: none;
 	font-size: 20px;
@@ -45,7 +45,7 @@ a{
 
 
 li a:hover:not(.current-link){
-    background-color: #F37298;
+    background-color: #7bf2ff;
 }
 
 body{
@@ -53,14 +53,13 @@ body{
 }
 
 .current-link{
-	background-color:#F37298;
+	background-color:#7bf2ff;
 
 }
 
 
-.hamburger-toggle{
-	position: absolute;
-	top: 0.75rem;
+/*.hamburger-toggle{+
+	top:0px;
 	right: 1rem;
 	flex-direction: column;
 	justify-content: space-between;
@@ -77,7 +76,7 @@ body{
 	border-radius: 10px;
 	padding: 0px;
 
-}
+}*/
 
 
 section{
