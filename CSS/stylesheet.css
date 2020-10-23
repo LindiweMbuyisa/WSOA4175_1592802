@@ -9,7 +9,10 @@
 body{
  background-color: #7bf2ff;
 }
+
 /*Navigation*/
+
+
 ul{
 	top:0;
   	background-color: black;
@@ -41,11 +44,10 @@ li a{
 li a:hover:not(.current-link){
     background-color: #F37298;
 }
-
 .current-link{
-	background-color:#F37298;
-
+	background-color: #F37298;
 }
+
 
 a{
 padding: 8px;
@@ -53,19 +55,37 @@ padding: 8px;
 }
 
 
-.hamburger-menu{
-	width: 100%;
-	padding: 10px 20px;
-	background-color: black;
-	text-align: right;
-	box-sizing: border-box;
-	color: black;
-	font-size: 20px;
+.hamburger-toggle{
+	position: absolute;
+	top: 0.75rem;
+	right: 1rem;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 30px;
+	height: 21px;
 	display: none;
+	
+
 
 }
+.hamburger-toggle .hamburger{
+	height: 3px;
+	width: 100%;
+	background-color: white;
+	padding: 0px;
 
+}
+#bar1{
+	transform: translateY(6px);
 
+}
+#bar3{
+	transform: translateY(-6px);
+
+}
+#bar2{
+	transform: translateY(0px);
+}
 .Blog{
 	float: left;
 }
@@ -274,7 +294,11 @@ button:hover{
 
 #contact{
 	display: flex;
+	padding: 0px;
 
+}
+.title-about{
+	font-size: 30px;
 }
 .link{
 	
@@ -338,20 +362,8 @@ scroll-behavior: smooth;
 	color: black;
 	margin-left: 450px;
 }
-.read:hover{
-	color: black;
-}
-iframe{
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	right: 0px;
-	bottom: 0px;
-	height: 100%;
-	width: 100%;
 
 
-}
 /*Moblie*/
 
 @media screen and (max-width: 700px){
@@ -383,33 +395,39 @@ li a{
  font-size: 12px;
 
 }
-li{
+/*li{
 	float: none;
 }
-li a{
- font-size: 12px;
 
-}
-li{
-	float: none;
-}
-ul{
-	width: 100%;
-	display: none;
-}
+	.hamburger-toggle{
+		display: none;
 
+	}
+	ul{
+		
+		width: 100%;
 
+	}
+	nav{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	 ul{
+		text-align: center;
+	}
+	ul li a{
+		padding: .5rem 1rem;
+	}
+	ul .active{
+		display: flex;
+	}*/
 
-.hamburger{
- 	display: block;
- }
- 
 
 
 button{
 	font-size: 15px;
 	padding: 5px;
-	margin-top: 30px;
+	margin-top: 0px;
 	margin-right: 10px;
 }
 
@@ -490,6 +508,9 @@ margin-right: auto;
 	margin-left: 200px;
 	font-weight: bold;
 }
+.title-about{
+	font-size: 30px;
+}
  
 }
 
@@ -516,21 +537,33 @@ li a{
  font-size: 12px;
 
 }
-li{
+/*li{
 	float: none;
 }
-ul{
-	width: 100%;
-	display: none;
-}
+	.hamburger-toggle{
+		display: flex;
 
+	}
+	ul{
+		display: none;
+		width: 100%;
 
-.hamburger{
- 	display: block;
- }
- .togglehamburger{
- 	display: block;
- }
+	}
+	nav{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	 ul{
+		text-align: center;
+	}
+	ul li a{
+		padding: .5rem 1rem;
+	}
+	ul .active{
+		display: flex;
+	}
+*/
+
 button{
 	font-size: 20px;
 	padding: 10px;
@@ -594,8 +627,8 @@ button{
     width: 60%;
  }
  .img-blog{
-	margin-left: 100px;
-	margin-right: 0px;
+	margin-left: auto;
+	margin-right: auto;
 	width: 450px;
 	float: none;
 }
@@ -604,6 +637,10 @@ button{
 	font-size: 18px;
 	margin-left: 550px;
 	font-weight: bold;
+}
+.title-about{
+	font-size: 30px;
+	padding: 50px;
 }
 	}
 

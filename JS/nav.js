@@ -1,10 +1,10 @@
-function ToggleMenu(){
-	document.getElementById("hamburger-bar").classList.toggle("toggle");
-	document.getElementById("nav-links").classList.toggle("toggle");
-}
 
+let hamburgerToggle = document.getElementsByClassName('hamburger-toggle')[0]
+let links = document.getElementsByClassName('links')[0]
 
-
+hamburgerToggle.addEventListener('click', () => {
+	links.classList.toggle('active')
+});
 
 
 /*document.addEventListener('DOMContentLoaded', () => createNav());

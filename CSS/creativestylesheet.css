@@ -57,18 +57,27 @@ body{
 
 }
 
-.hamburger{
-	width: 100%;
-	padding: 10px 20px;
-	background-color: #F37298;
-	text-align: right;
-	box-sizing: border-box;
-	color: black;
-	font-size: 20px;
+
+.hamburger-toggle{
+	position: absolute;
+	top: 0.75rem;
+	right: 1rem;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 30px;
+	height: 21px;
 	display: none;
 
-}
 
+}
+.hamburger-toggle .hamburger{
+	height: 3px;
+	width: 100%;
+	background-color: white;
+	border-radius: 10px;
+	padding: 0px;
+
+}
 
 
 section{
@@ -168,7 +177,7 @@ button:hover{
 
 }
 .heading{
-	color:  #7bf2ff;
+	color:  white;
 	font-family: Lato;
 	font-weight: 600;
 	font-size: 80px;
@@ -186,14 +195,13 @@ button:hover{
 .column-left{
 	float: left;
 	width: 50%;
-	padding: 0px;
+	padding: 20px;
 	
 }
 .column-right{
 	float: right;
 	width: 50%;
-	padding: 0px;
-	
+	padding: 20px;
 }
 
 .column-container{
@@ -205,8 +213,8 @@ button:hover{
 	display: block;
 	margin-right: auto;
 	margin-left: auto;
-	width: 80%;
-	
+	width: 100%;
+	height: 450px;
 }
 
 
@@ -235,13 +243,13 @@ li a{
  font-size: 12px;
 
 }
-li{
+/*li{
 	float: none;
 }
 ul{
 	width: 100%;
 	display: none;
-}
+}*/
 
 
 button{
@@ -249,12 +257,30 @@ button{
 	padding: 5px;
 }
 
-.hamburger{
- 	display: block;
- }
- .togglehamburger{
- 	display: block;
- }
+	/*.hamburger-toggle{
+		display: flex;
+
+	}
+	ul{
+		display: none;
+		width: 100%;
+
+	}
+	nav{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	 ul{
+		text-align: center;
+	}
+	ul li a{
+		padding: .5rem 1rem;
+	}
+	ul .active{
+		display: flex;
+	}
+*/
+
  
 .heading{
 	font-size: 30px;
@@ -271,6 +297,22 @@ button{
 .subtitle{
 	font-size: 15px;
 }
+.video{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+	height: 450px;
+}
+.video{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+	height: 200px;
+	padding:0px;
+}
+
 }
 
 /*Tablet */
@@ -296,7 +338,7 @@ li a{
  font-size: 12px;
 
 }
-li{
+/*li{
 	float: none;
 }
 ul{
@@ -304,13 +346,30 @@ ul{
 	display: none;
 }
 
+	.hamburger-toggle{
+		display: flex;
 
-.hamburger{
- 	display: block;
- }
- .togglehamburger{
- 	display: block;
- }
+	}
+	ul{
+		display: none;
+		width: 100%;
+
+	}
+	nav{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	 ul{
+		text-align: center;
+	}
+	ul li a{
+		padding: .5rem 1rem;
+	}
+	ul .active{
+		display: flex;
+	}*/
+
+
 
 button{
 	font-size: 20px;
@@ -374,4 +433,12 @@ button{
  .img-about{
     width: 60%;
  }
+ .video{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+	height: 450px;
+}
+
 	}
