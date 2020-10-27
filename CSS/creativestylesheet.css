@@ -2,13 +2,23 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Lato'
+	font-family: 'Lato';
+
 }
+body{
+	 background-color: black;
+}
+
+nav{
+	height: 40px;
+	background-color: #7bf2ff;
+}
+
 /*Navigation*/
 
 ul{
-	top:0;
-  	background-color: #F37298;
+  	top:0;
+  	background-color: #7bf2ff;
     list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -16,67 +26,51 @@ ul{
     position: fixed;
     width: 100%;
     z-index: 10;
-
 }
 
 li{
 	float: right;
 
 }
-li a{
-	display: block;
+ul li a{
+	
 	color: black;
 	text-align: center;
 	text-decoration: none;
 	font-size: 20px;
 	font-family: Lato;
 	padding: 10px 10px;
-   
- 
-
-
-}
-
-a{
-	padding: 8px;
-
-}
-
-
-
+   	display: flex;
+	
+	}
 li a:hover:not(.current-link){
-    background-color: #7bf2ff;
-}
-
-body{
-	background-color: black;
+    background-color: #F37298;
 }
 
 .current-link{
-	background-color:#7bf2ff;
+	background-color:#F37298;
 
 }
-
-
-/*.hamburger-toggle{+
-	top:0px;
-	right: 1rem;
-	flex-direction: column;
-	justify-content: space-between;
-	width: 30px;
-	height: 21px;
-	display: none;
-
+a{
+	padding: 8px;
+}
+.logo a{
+	color: black;
+    text-align: center;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 20px;
+    font-family: Lato;
+    padding: 10px;
+    display: flex;
+    z-index: 13;
+    position: absolute;
 
 }
-.hamburger-toggle .hamburger{
-	height: 3px;
-	width: 100%;
-	background-color: white;
-	border-radius: 10px;
+.logo{
 	padding: 0px;
+}
 
-}*/
 
 
 section{
@@ -238,47 +232,67 @@ img{
 	width: 100%;
 }
 
-li a{
- font-size: 12px;
+   nav{
+			position: relative;
+	}
+
+.bar{
+	width: 30px;
+	height: 3px;
+	background-color:  black;
+	margin: 5px;
+	padding: 0px;
+
+	}
+		
+
+	ul li a{
+		padding: 20px 20px;
+  
+	
+	}
+	.hamburger-menu{
+			position: absolute;
+			cursor: pointer;
+			top: 50%;
+			right: 4%;
+			transform: translate(35%, -50%);
+			z-index: 11;
+			margin: auto;
+			padding: 0px;
+		}
+		li{
+			float: none;
+			display: flex;
+			
+			
+		}
+		ul{
+			position: fixed;
+			background-color: #7bf2ff;
+			height: 100%;
+			display: none;
+		}
+		ul.active{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+
+		}
+		  .logo a{
+	
+    padding: 8px;
+    
 
 }
-/*li{
-	float: none;
-}
-ul{
-	width: 100%;
-	display: none;
-}*/
-
 
 button{
 	font-size: 15px;
 	padding: 5px;
 }
 
-	/*.hamburger-toggle{
-		display: flex;
 
-	}
-	ul{
-		display: none;
-		width: 100%;
-
-	}
-	nav{
-		flex-direction: column;
-		align-items: flex-start;
-	}
-	 ul{
-		text-align: center;
-	}
-	ul li a{
-		padding: .5rem 1rem;
-	}
-	ul .active{
-		display: flex;
-	}
-*/
 
  
 .heading{
@@ -296,13 +310,7 @@ button{
 .subtitle{
 	font-size: 15px;
 }
-.video{
-	display: block;
-	margin-right: auto;
-	margin-left: auto;
-	width: 100%;
-	height: 450px;
-}
+
 .video{
 	display: block;
 	margin-right: auto;
@@ -327,46 +335,63 @@ button{
     }
 
 
+ .logo a{
+	
+    padding: 8px;
+    
+
+}
+.bar{
+			width: 30px;
+			height: 3px;
+			background-color: black;
+			margin: 5px;
+			padding: 0px;
+
+	}
+		
+
+	ul li a{
+		padding: 20px 20px;
+  		font-size: 30px;
+	
+	}
+	.hamburger-menu{
+			position: absolute;
+			cursor: pointer;
+			top: 17px;
+			right: 2%;
+			transform: translate(20%, -40%);
+			z-index: 11;
+			margin:auto;
+			padding: 0px;
+		}
+		li{
+			float: none;
+			display: flex;
+			
+			
+		}
+		ul{
+			position: fixed;
+			background-color: #7bf2ff;
+			height: 100%;
+			display: none;
+			transition: all 3s ease;
+		}
+		ul.active{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+
+		}
+
 img{
 	margin-right: auto;
 	margin-left: auto;
 	width: 80%;
 }
-
-li a{
- font-size: 12px;
-
-}
-/*li{
-	float: none;
-}
-ul{
-	width: 100%;
-	display: none;
-}
-
-	.hamburger-toggle{
-		display: flex;
-
-	}
-	ul{
-		display: none;
-		width: 100%;
-
-	}
-	nav{
-		flex-direction: column;
-		align-items: flex-start;
-	}
-	 ul{
-		text-align: center;
-	}
-	ul li a{
-		padding: .5rem 1rem;
-	}
-	ul .active{
-		display: flex;
-	}*/
 
 
 

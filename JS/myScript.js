@@ -3,10 +3,6 @@ function Back(){
 	window.history.back();
 };
 
-let showreel = document.getElementsByClassName('video');
-function playshowreel(){
-	showreel.play();
-}
 
 
 

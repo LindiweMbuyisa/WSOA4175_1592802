@@ -1,12 +1,12 @@
+let hamburger = document.querySelector(".hamburger-menu");
+let links = document.querySelector("ul");
 
-let hamburgerToggle = document.getElementsByClassName('hamburger-toggle');
-let links = document.getElementsByClassName('links');
+let link = document.querySelectorAll("ul li");
 
-hamburgerToggle.addEventListener('click', () => {
-	links.classList.toggle('active')
+hamburger.addEventListener("click", () =>{
+	links.classList.toggle("active");
+
 });
-
-
 /*document.addEventListener('DOMContentLoaded', () => createNav());
 
 let navBar= [
