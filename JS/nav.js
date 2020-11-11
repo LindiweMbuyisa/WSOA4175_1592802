@@ -7,14 +7,16 @@ hamburger.addEventListener("click", () =>{
 	links.classList.toggle("active");
 
 });
-/*document.addEventListener('DOMContentLoaded', () => createNav());
+
+
+document.addEventListener('DOMContentLoaded', () => createNav());
 
 let navBar= [
-
-{title: 'About', link: 'About.html'},
 {title: 'Blog', link: 'Blog.html'},
-{title: 'Creative Projects', link: 'Creative.html'},
-{title: 'Lindiwe:)', link:'index.html'},
+{title: 'About', link: 'About.html'},
+
+//{title: 'Creative Projects', link: 'Creative.html'},
+//{title: 'Lindiwe:)', link:'index.html'},
 
 
 
@@ -36,5 +38,5 @@ let nav = document.querySelector('nav');
  }
 
  nav.appendChild(ul);
-};*/
+};
 

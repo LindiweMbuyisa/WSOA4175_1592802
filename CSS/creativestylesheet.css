@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
 *{
 	margin: 0;
 	padding: 0;
@@ -5,20 +8,41 @@
 	font-family: 'Lato';
 
 }
+ @keyframes TextAnim{
+  0%{
+   
+   b
+    }
+    25%{
+     opacity: 0.8;
+   
+    }
+    50%{
+     opacity: 0.5;
+    }
+    75%{
+     
+      opacity: 0.2;
+    }
+    100%{
+    opacity: 0;
+    }
+  
+ }
 body{
-	 background-color: black;
+	 background-color: #7bf2ff;
 }
 
 nav{
 	height: 40px;
-	background-color: #7bf2ff;
+	background-color: black;
 }
 
 /*Navigation*/
 
 ul{
   	top:0;
-  	background-color: #7bf2ff;
+  	background-color: black;
     list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -34,7 +58,7 @@ li{
 }
 ul li a{
 	
-	color: black;
+	color: white;
 	text-align: center;
 	text-decoration: none;
 	font-size: 20px;
@@ -53,9 +77,11 @@ li a:hover:not(.current-link){
 }
 a{
 	padding: 8px;
+	color: black;
+
 }
 .logo a{
-	color: black;
+	color: white;
     text-align: center;
     text-decoration: none;
     list-style-type: none;
@@ -64,16 +90,25 @@ a{
     padding: 10px;
     display: flex;
     z-index: 13;
-    position: absolute;
+    position: fixed;
 
 }
 .logo{
 	padding: 0px;
 }
+.logo a:hover{
+ 	background-color: #F37298;
+ 
+ }
 
 
 
 section{
+	width: auto;
+	padding: 20px;
+ 	text-align: left;
+}
+main{
 	width: auto;
 	padding: 20px;
  	text-align: left;
@@ -97,14 +132,7 @@ p{
     text-align: center;
 	
 }
-header{
-	color: #F37298;
-	text-align: center;
-	font-family:Lato;
-	font-size: 120px;
-	font-weight: 900;
-	text-decoration: none;
-}
+
 
 h2{
 	color: #f37298;
@@ -118,39 +146,41 @@ img{
     display: block;
 	margin-right: auto;
 	margin-left: auto;
-	width: 80%;
+	width: 100%;
 	
 }
 
  div{
- 	/*padding: 20px;*/
+ 	padding: 20px;
  	text-align: left;
  }
 .caption{
  	text-align: center;
  	font-size: 12px; 
  	font-family: Lato;
- 	text-decoration: underline;
  	color: black;
  }
+
 button {
     font-family: Lato;
-    color: #0D2A4C;
-    font-size: 135%;
-    font-weight: 400;
+    color: black;
+    font-size: 15px;
     text-decoration: none;
-    border: solid #0D2A4C;
-    padding: 50px 50px;
-    border-radius: 9px;
-    transition: all 0.5s;
+    border: solid black;
+    border-radius: 10px;
     margin: auto;
-    padding: 10px;
-
+   	padding: 10px;
+   	float: right;
+    margin-right: 20px;
+ 	margin-top: 20px;
+ 	margin-left: 20px;
+ 	margin-bottom: 20px;
+   	background-color: #F37298;
 }
 
 button:hover{
-    color:  #F37298;
-    border: solid #F37298 2px;
+    color:  black;
+    border: solid black 2px;
 }
 #button-position{
 	margin: auto;
@@ -158,19 +188,50 @@ button:hover{
 	
 }
 
+
+.button {
+font-family: Lato;
+color: black;
+ font-size: 15px;
+ text-decoration: none;
+ border: solid black;
+ border-radius: 10px;
+ display: inline;
+ padding: 10px;
+ float: right;	
+ background-color: #F37298;
+ margin-right: 20px;
+ margin-top: 20px;
+ margin-left: 20px;
+ margin-bottom: 20px;
+}
+
+.button:hover {
+  color: black;
+  border: solid black 2px;
+}
 .project-title{
 	
 	font-family: Lato;
-	font-size: 30px;
+	font-size: 80px;
 	font-weight: bold;
-	color: white;
+	color: black;
 	margin-bottom: 10px;
-	border-radius: 10px;
+
 	
 
 }
+ .main-title{
+	color: black;
+	font-family: Lato;
+	font-weight: bold;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+  
+}
 .heading{
-	color:  white;
+	color:  black;
 	font-family: Lato;
 	font-weight: 600;
 	font-size: 80px;
@@ -178,11 +239,13 @@ button:hover{
 
 }   
   .subtitle{
-	color:  white;
+	color:  black;
 	text-align: center;
 	font-family: Lato;
     font-size: 20px;
     text-decoration: none;
+    margin: auto;
+    text-align: left;
  
 }
 .column-left{
@@ -196,10 +259,15 @@ button:hover{
 	width: 50%;
 	padding: 20px;
 }
+.column-right .title{
+	justify-content: center;
+	align-items: center;
+}
 
 .column-container{
 	
 	display: table;
+	margin-top: 60px;
 	
 }
 .video{
@@ -209,7 +277,72 @@ button:hover{
 	width: 100%;
 	height: 450px;
 }
+.paragraph{
+	color: black;
+	font-family: Lato;
+    font-size: 20px;
+    padding: 20px;
+    text-align: left;
+}
+.header{
+	height: 300px;
+	width: auto;
+	background-color: black;
+	overflow: hidden;
+	}
 
+	.container{
+		display: flex;
+	}
+	.card-left{
+		height: 400px;
+		width: 50%;
+		background-color: #F37298; 
+		padding: 0;
+		margin:10px;
+		color: white;
+		font-family: Lato;
+		cursor: pointer;
+		float: left;
+	}
+	.card-right{
+		height: 400px;
+		width: 50%;
+		background-color: #F37298; 
+		padding: 0;
+		margin:10px;
+		color: white;
+		font-family: Lato;
+		cursor: pointer;
+		float: right;
+	}
+	.title{
+	
+		display: block;
+		padding-top: 25%;
+
+	}
+	
+	a {
+		font-family: Lato;
+		font-size: 50px;
+		font-weight: bold;
+		color: black;
+		text-align: center;
+		text-decoration: none;
+		display: block;
+	}
+	
+	
+	/*.card-left:hover{
+		background-color: #F37298;
+		
+		
+	}
+	.card-right:hover{
+		background-color: #F37298;
+		}*/
+	
 
 /*Moblie*/
 
@@ -233,13 +366,13 @@ img{
 }
 
    nav{
-			position: relative;
+	position: relative;
 	}
 
 .bar{
 	width: 30px;
 	height: 3px;
-	background-color:  black;
+	background-color:  white;
 	margin: 5px;
 	padding: 0px;
 
@@ -248,9 +381,18 @@ img{
 
 	ul li a{
 		padding: 20px 20px;
-  
+  		font-size: 30px;
+  		color: transparent;
+  		-webkit-text-stroke : 1px white;
+  		font-weight: 900;
 	
 	}
+	ul li a:hover{
+		color: #F37298;
+		-webkit-text-stroke : 1px white;
+		transition: 0.5s;
+	}
+	
 	.hamburger-menu{
 			position: absolute;
 			cursor: pointer;
@@ -269,7 +411,7 @@ img{
 		}
 		ul{
 			position: fixed;
-			background-color: #7bf2ff;
+			background-color: black;
 			height: 100%;
 			display: none;
 		}
@@ -278,35 +420,47 @@ img{
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
+			flex-flow: column-reverse;
 
 		}
 		  .logo a{
 	
-    padding: 8px;
-    
+    	padding: 8px;
+       position: absolute;
 
+}
+	li a:hover:not(.current-link){
+    background-color: black;
 }
 
 button{
 	font-size: 15px;
 	padding: 5px;
 }
+.button{
+    padding: 6px;
+	margin-right: 10px;
+	margin-top: 20px;
+ 	margin-left: 20px;
+	margin-bottom: 20px;
+}
 
-
-
- 
 .heading{
 	font-size: 30px;
 }
-.columns-container{
+.column-container{
 	width: 100%;
+	display: block;
 }
 .column-left{
   width: auto;
+  float: none;
 }
 .column-right{
  width: auto;
+ float: none;
 }
+
 .subtitle{
 	font-size: 15px;
 }
@@ -316,10 +470,47 @@ button{
 	margin-right: auto;
 	margin-left: auto;
 	width: 100%;
-	height: 200px;
+	height: 300px;
 	padding:0px;
 }
 
+
+.container{
+		display: block;
+}
+	.card-left{
+		width: auto;
+  		float: none;
+   		margin-top: 0px;
+	}
+	.card-right{
+		 width: auto;
+ 		float: none;
+ 		margin-top: 0px;
+	}
+	.title{
+		
+		font-size: 35px;
+		padding-top: 55%;
+		
+
+	}
+	
+	.card-left:hover{
+		background-color: #F37298;
+		
+		
+	}
+	.card-right:hover{
+		background-color: #F37298;
+		}
+		.project-title{
+			font-size: 30px;
+		}
+		.header{
+			height: 200px;
+		}
+	
 }
 
 /*Tablet */
@@ -338,13 +529,13 @@ button{
  .logo a{
 	
     padding: 8px;
-    
+    position: absolute;
 
 }
 .bar{
 			width: 30px;
 			height: 3px;
-			background-color: black;
+			background-color: white;
 			margin: 5px;
 			padding: 0px;
 
@@ -353,8 +544,16 @@ button{
 
 	ul li a{
 		padding: 20px 20px;
-  		font-size: 30px;
+  		font-size: 60px;
+  		color: transparent;
+  		-webkit-text-stroke : 1px white;
+  		font-weight: 900;
 	
+	}
+	ul li a:hover{
+		color: #F37298;
+		-webkit-text-stroke : 1px white;
+		transition: 0.5s;
 	}
 	.hamburger-menu{
 			position: absolute;
@@ -374,7 +573,7 @@ button{
 		}
 		ul{
 			position: fixed;
-			background-color: #7bf2ff;
+			background-color: black;
 			height: 100%;
 			display: none;
 			transition: all 3s ease;
@@ -384,20 +583,25 @@ button{
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
+			flex-flow: column-reverse;
 
 		}
+		li a:hover:not(.current-link){
+    background-color: black;
+}
 
 img{
 	margin-right: auto;
 	margin-left: auto;
-	width: 80%;
+	width: 100%;
 }
 
 
 
 button{
 	font-size: 20px;
-	padding: 10px;
+	padding: 8px;
+	width: 10%;
 }
 
 .heading{
@@ -405,13 +609,18 @@ button{
 }
 .button{
     
-    font-size: 100%;
-    padding: 2.5px 8px;
+    font-size: 20px;
     width: 10%;
-    padding: 5px;
+    padding: 10px;
+	margin-right: 10px;
+	margin-top: 20px;
+ 	margin-left: 20px;
+	margin-bottom: 20px;
 }
 .title{
-	font-size: 22px;
+	font-size: 60px;
+	padding-top: 50%;
+
 }
 #button-position{
    width: 16%;
@@ -424,7 +633,7 @@ button{
 
 }
 .subtitle{
-	font-size: 18px;
+	font-size: 25px;
 }
 .date{
 	font-size: 15px;
@@ -451,7 +660,7 @@ button{
 }
 .caption{
  	
- 	font-size: 15px; 
+ 	font-size: 20px; 
  	
  }
  .img-about{
@@ -464,5 +673,20 @@ button{
 	width: 100%;
 	height: 450px;
 }
+.project-title{
+			font-size: 60px;
+		}
 
+.header{
+	 height: 500px;
 	}
+	.container{
+		display: flex;
+}
+	.card-left{
+	height: 540px;
+	}
+	.card-right{
+	height: 540px;
+	}
+}
