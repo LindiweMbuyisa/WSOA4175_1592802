@@ -16,7 +16,7 @@ let navBar= [
 {title: 'About', link: 'About.html'},
 
 //{title: 'Creative Projects', link: 'Creative.html'},
-//{title: 'Lindiwe:)', link:'index.html'},
+
 
 
 

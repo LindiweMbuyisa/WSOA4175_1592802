@@ -323,15 +323,49 @@ color: black;
 
 	}
 	
-	a {
-		font-family: Lato;
-		font-size: 50px;
-		font-weight: bold;
-		color: black;
-		text-align: center;
-		text-decoration: none;
-		display: block;
-	}
+	
+	.prevbtn{
+	background-color: #F37298;
+	color: black;
+	text-decoration: none;
+	display: inline-block;
+	font-family: Lato;
+    font-size: 15px;
+   	padding: 10px;
+   	float: left;
+   	margin-left: 20px;
+  
+
+}
+.prevbtn:hover{
+	color:black;
+	background-color: #F37298;
+
+}
+.nextbtn{
+  	background-color: #F37298;
+ 	color: black;
+  	text-decoration: none;
+	display: inline-block;
+	font-family: Lato;
+    font-size: 15px;
+   	padding: 10px;
+   	float: right;
+   	margin-right: 20px;
+   	margin-bottom: 20px;
+  
+   
+}
+.nextbtn:hover{
+	color:black;
+	background-color: #F37298;
+
+}
+.btn{
+	border-radius: 10px;
+ border: solid black 2px;
+
+}
 	
 	
 	/*.card-left:hover{
@@ -454,11 +488,11 @@ button{
 }
 .column-left{
   width: auto;
-  float: none;
+
 }
 .column-right{
  width: auto;
- float: none;
+
 }
 
 .subtitle{
@@ -470,7 +504,7 @@ button{
 	margin-right: auto;
 	margin-left: auto;
 	width: 100%;
-	height: 300px;
+	height: 200px;
 	padding:0px;
 }
 
@@ -510,7 +544,15 @@ button{
 		.header{
 			height: 200px;
 		}
-	
+.nextbtn{
+	padding: 6px;
+	font-size: 15px;
+}
+.prevbtn{
+	padding: 6px;
+	font-size: 15px;
+}
+
 }
 
 /*Tablet */
@@ -689,4 +731,12 @@ button{
 	.card-right{
 	height: 540px;
 	}
+		.nextbtn{
+
+	font-size: 20px;
+}
+.prevbtn{
+
+	font-size: 20px;
+}
 }
