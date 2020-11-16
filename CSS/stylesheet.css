@@ -1,5 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 
+/*@keyframes font{
+	10%{
+		color: #7bf2ff;
+
+			}
+	50%{
+		color: black;
+		
+	}
+	100%{
+		color: white;
+		
+	}
+}*/
+
 *{
 	margin: 0;
 	padding: 0;
@@ -466,6 +481,7 @@ color: black;
 		color: black;
 		text-align: center;
 		text-decoration: none;
+		animation: font 4s infinite;
 		
 
 		
@@ -759,16 +775,18 @@ margin-right: auto;
 		width: auto;
   		float: none;
    		margin-top: 0px;
+   		height: 300px;
 	}
 	.card-right{
 		 width: auto;
  		float: none;
  		margin-top: 0px;
+ 		height: 300px;
 	}
 	.creative-title{
 		
 		font-size: 35px;
-		padding-top: 55%;
+		padding-top: 40%;
 		
 
 	}

@@ -3,7 +3,10 @@ function Back(){
 	window.history.back();
 }
 function goForward(){
-	window.hisctory.forward();
+	window.history.forward();
+}
+function pre(){
+	window.history.back();
 }
 
 
@@ -29,4 +32,4 @@ function Prev(){
 		pages= numberOfPages.length-1;
 	}
 	slider.href =numberOfPages[pages]
-};;*/
+};*/
