@@ -18,8 +18,6 @@ let navBar= [
 //{title: 'Creative Projects', link: 'Creative.html'},
 
 
-
-
 ];
 
 
